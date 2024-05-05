@@ -1,0 +1,71 @@
+/* ----------------------------- */
+/* Nosotros / POSTA DANIEL*/
+/* ----------------------------- */
+.no-margin {
+    margin: 0;
+}
+.nosotros-banner {
+    background-image: url(img/fondo_home.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+}
+.nosotros-banner__texto{
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-weight: 800;
+}
+img {
+    max-width: 100%;
+}
+.nosotros-section {
+    width: min(90%, 75rem);
+    margin: 3rem auto;
+}
+
+/* chefs */
+.nuestros-chefs{
+    width: min(90%, 75rem);
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.nuestros-chefs__texto{
+    width: min(80%, 30rem);
+    margin: 2rem 0;
+}
+
+@media (min-width: 768px) {
+    .nosotros-section {
+        display: flex;
+        justify-content: space-between;
+    }
+    .nosotros-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .nosotros-section__box{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2,1fr);
+        gap: 1rem;
+    }
+    .nosotros-section__box:nth-child(){
+        border-radius: 5rem;
+    }
+
+    /* chefs */
+
+    .nuestros-chefs__personas{
+        display: flex;
+        justify-content: space-between;
+        column-gap: 2rem;
+        text-align: center;
+    }
+}
