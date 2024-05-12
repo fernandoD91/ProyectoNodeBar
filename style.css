@@ -396,21 +396,36 @@ p {
 }
 
 /* formulario y mapa de contacto*/
-.Comentario, .Ubicanos {
+
+
+
+.Contacts {
   display: grid;
-  flex: 1;
-  padding: 20 px;
-  box-sizing: border-box;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 
+.Mensaje_contacto {
+  padding-left: 20px;
+  padding: 20px;
+}
 
+.Comentario_Formulario {
+  padding-right: 20px;
+  padding: 20 px;
+}
+
+.Ubicanos {
+  padding-top: 20px;
+  padding: 20 px;
+}
 
 /* estilos para el formulario*/
 input[type="text"],
 input[type="email"],
 input[type="tel"],
 textarea {
-  width: calc(35% - 20px);
+  width: calc(100% - 20px);
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
