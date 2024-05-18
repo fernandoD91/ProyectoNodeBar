@@ -86,6 +86,17 @@ p {
   background-size: cover;
 }
 
+.container-central-reservation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 150vh;
+  padding: 0 20px;
+  background-image: url('/img/fondo_home.png');
+  background-size: cover;
+}
+
 
 .value-prop {
   flex: 1;
@@ -128,7 +139,19 @@ p {
   display: block;
   box-sizing: border-box;
 }
-
+.reservation-form input[type="file"]{
+  width: 100%;
+    padding: 10px;
+    margin-bottom: 25px;
+    display: block;
+}
+.reservation-form input[type="checkbox"],
+    .reservation-form label[for="checkbox"]{
+    display: inline;
+    padding: 10px;
+    margin-bottom: 25px;
+    
+  }
 .my-button {
   background-color: #F2994A;
   border: none;
