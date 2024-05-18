@@ -116,6 +116,7 @@ p {
 .reservation-form input[type="number"],
 .reservation-form input[type="date"],
 .reservation-form select[name="horario"],
+
 .reservation-form textarea[id="comentarios"]{
     width: 100%;
     padding: 10px;
@@ -124,6 +125,12 @@ p {
     border: 1px solid #ccc;
     display: block;
     box-sizing: border-box;
+}
+.reservation-form input[type="file"]{
+  width: 100%;
+    padding: 10px;
+    margin-bottom: 25px;
+    display: block;
 }
 
 .my-button {
@@ -143,6 +150,13 @@ p {
   
   .my-button:hover {
     background-color: #b46c2d;
+  }
+  .reservation-form input[type="checkbox"],
+    .reservation-form label[for="checkbox"]{
+    display: inline;
+    padding: 10px;
+    margin-bottom: 25px;
+    
   }
   .section.products {
     background-color: #f2f2f2;
@@ -387,4 +401,6 @@ p {
       grid-template-columns: repeat(4, 1fr);
     }
   }
+
+  
   
