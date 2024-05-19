@@ -1,18 +1,18 @@
 let imagenes = [
     {
-        "url": "img/carrusel1.jpg",
+        "url": "img/carrusel1.png",
         "nombre": "Un lugar de encuentro !!",
         "descripcion": "Ven con amigos, y disfruta del mejor ambiente, y la comodiad de nuestras instalaciones"
 
     },
     {
-        "url": "img/carrusel2.jpg",
+        "url": "img/carrusel2.png",
         "nombre": "El lugar perfecto para deleitar el paladar",
         "descripcion": "Disfruta de nuestra gran variedad de tragos, y cocteles de gran sabor y con la mejor calidad"
 
     },
     {
-        "url": "img/carrusel3.jpg",
+        "url": "img/carrusel3.png",
         "nombre": "Fusion perfecta entre comidas y tragos",
         "descripcion": "A la carta se le suman sándwiches, ensaladas, pizzas, tablas de charcutería y las mejores hamburguesas de la zona"
 

@@ -16,6 +16,125 @@ body {
   unicode-bidi: isolate;
 }
 
+/* Inicio de carrusel ***************************/
+.atras, .adelante{
+  position: absolute;
+  z-index: 1;
+  color:rgb(255, 252, 252);
+  font-size: 5rem;
+  user-select: none;
+  top:55%;
+}
+.atras {
+  left:4%; 
+}
+.adelante {
+  right: 4%;
+}
+
+.carrusel{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width:100vw;
+  height: 100vh;
+}
+
+.imagenes{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+
+.img{
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.85);
+  height: 90vh;
+  width: 95vw;
+  border-radius: 15px ;
+  margin: 5px;
+  object-fit: cover;
+  filter: saturate(175%);
+}
+
+.caja{
+  overflow: hidden;
+  position: absolute;
+  flex-direction: column;
+  transform: translateY(0px);
+  margin-bottom: 10px;
+  backdrop-filter: blur(20px);
+  background-color: rgba(63, 106, 138, 0.21);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+}
+
+.caja h3{
+  text-shadow: 0px 0px 15px black;
+  padding-top: 0rem;
+  margin: 0.5rem;
+  color: white;
+  font-weight: 300;
+  font-size: 27px;
+}
+
+.caja p{
+  margin:0;
+  align-items: center;
+  padding: 0.5rem;
+  color:white;
+  font-size: 0px;
+  font-weight: 300;
+}
+
+.imagenes .caja{
+  width: 40%;
+  height: 5rem;
+  transition: 1s;
+}
+
+.imagenes:hover .caja{
+  transition: height 1s, transform 1s, background-color 1s;
+  transform: translateY(-10px);
+  height: 18rem;
+  background-color: rgba(63, 106, 138, 0.71);
+}
+
+.imagenes:hover .caja p{
+  transition: font-size 0s .2s linear;
+  font-size: 23px;
+  font-weight: 300;
+  text-shadow: 0px 0px 10px #000000;
+}
+
+.puntos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.puntos p{
+  height: 5vh;
+  font-size: 100px;
+  font-weight: 500;
+  margin-top: -50px;
+  color: black;
+}
+
+.puntos .bold{
+  font-weight: 700;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #5E17EB ;
+}
+
+/* fin de carrusel *********************************************/
+
 p {
   display: block;
   font-size: 18px;
