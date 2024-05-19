@@ -139,6 +139,7 @@ p {
   display: block;
   box-sizing: border-box;
 }
+
 .reservation-form input[type="file"]{
   width: 100%;
     padding: 10px;
@@ -455,7 +456,7 @@ textarea {
   box-sizing: border-box;
 }
 
-textarea {
+textarea [id="mensaje"] {
   height: 150px;
 }
 
