@@ -9,6 +9,11 @@ h1,h2,p{
     margin: 1rem;
 }
 
+#imgapi{
+    width: 35rem;
+    height: 30rem;
+}
+
 .nosotros-banner {
     background-image: url(img/fondo_home.png);
     background-repeat: no-repeat;
