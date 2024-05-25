@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/css/all.min.css">
     <link rel="stylesheet" href="/css/brands.min.css">
     <link rel="icon" href="./img/NodeBar.ico">
+    <script src="./main.js"></script>
 </head>
 <body>
     <div class="navbar">
@@ -32,7 +33,7 @@
         </div>
       <div class="reservation-form">
         <h2>Completá el formulario</h2>
-        <form action="/submit_reservation" method="post">
+        <form action="/submit_reservation" method="post" onsubmit="return validarFormulario()">
             <label for="name">Nombre y apellido:</label>
             <input type="text" id="name" name="name" placeholder="Ej. Juan Sanchez" required>
             <label for="email">Email:</label>
@@ -53,15 +54,15 @@
               <option value="21">21 hs.</option>
               <option value="23">23 hs</option>
             </select>
-            <label for="archivo">Subir imagen de su documento</label>
-            <input type="file" id="archivor" name="archivo" required>
-        <!-- <label for="imagen">Imagen:</label>
-        <input type="image" id="imagen" name="imagen" src="./images/formulario.jpg" alt="Imagen" width="50" height="50"> -->
+            <!-- <label for="archivo">Subir imagen de su documento</label>
+            <input type="file" id="archivor" name="archivo" required> -->
+           <label for="imagen">Imagen:</label>
+            <input type="image" id="imagen" name="imagen" src="./img/NodeBar.ico" alt="Imagen" width="50" height="50">
             <label for="comentarios">Dejanos tus comentarios o peticiones</label>
               <textarea name="comentarios" id="comentarios" cols="60" rows="2" placeholder="Escribí tus comentarios"></textarea>
            
             <input type="checkbox" id="checkbox" name="checkbox">
-            <label for="checkbox">Acepto recibir ofertas y promociones</label>
+            <label for="checkbox">Acepto términos y condiciones</label>
             
             
             <button class="my-button">Reservar Mesa</button>

@@ -130,7 +130,7 @@ p {
 .reservation-form input[type="number"],
 .reservation-form input[type="date"],
 .reservation-form select[name="horario"],
-
+.reservation-form input[type="image"]
 .reservation-form textarea[id="comentarios"]{
     width: 100%;
     padding: 10px;
@@ -140,13 +140,16 @@ p {
     display: block;
     box-sizing: border-box;
 }
-.reservation-form input[type="file"]{
+/* .reservation-form input[type="file"]{
   width: 100%;
     padding: 10px;
     margin-bottom: 25px;
     display: block;
-}
+} */
 
+.reservation-form textarea[id="comentarios"]{
+  height: 50px;
+}
 .my-button {
     background-color: #F2994A; 
     border: none;
