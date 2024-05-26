@@ -311,7 +311,7 @@ p {
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 50px;
 }
 
@@ -373,7 +373,7 @@ p {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
 }
 
@@ -589,7 +589,34 @@ input[type="submit"]:hover {
 }
 
 @media screen {
+   /* ******************* Media Query para Tablets ********************** */
 
+  @media (600px < width < 960px){
+
+    .carrusel{
+      display: none;
+    }
+    .puntos{
+      display: none;
+    }
+    .container-central{
+      
+      height: 42vh;
+      
+      padding: 0.5rem;
+      
+    }
+
+    .product-grid {
+      grid-template-columns: repeat(2, 1fr);
+     }
+
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+    } 
+
+  }
+    /* ******************* Media Query para Celulares *********************** */
   @media (0px < width < 600px){
     .carrusel{
       display: none;
@@ -617,7 +644,7 @@ input[type="submit"]:hover {
     .nav-right{
       display: none;
     }
-    .nav-right.show {
+    .nav-right.show {   /*********** la clase show se agrega o se quita al hacer click en el menu hamburguesa */
       display: flex;
       font-weight: bolder;
       font-size: larger;
