@@ -169,6 +169,11 @@ p {
 .navbar a:hover {
   color: #F2994A;
 }
+.menuHamburguesa{
+  color: white;
+  font-size: 2.5rem;
+  display: none;
+}
 
 .reserva-form input {
   margin-bottom: 10px;
@@ -525,18 +530,6 @@ p {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-  @media (min-width: 768px) {
-    .grid-container {
-      grid-template-columns: repeat(4, 1fr);
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .product-grid {
-      grid-template-columns: repeat(4, 1fr);
-    }
-  }
-
 /* formulario y mapa de contacto*/
 
 .Contacts {
@@ -592,3 +585,59 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #45a049;
 }
+
+@media screen {
+
+  @media (0px < width < 600px){
+    .carrusel{
+      display: none;
+    }
+    .puntos{
+      display: none;
+    }
+    .container-central{
+      flex-direction: column;
+      height: 42vh;
+      
+      padding: 0.5rem;
+      align-items:center;
+    }
+    .value-prop{
+      width: 90vw;
+      margin: 0;
+      padding: 0;
+    
+    }
+    .reservation-form{
+      width: 90vw;
+    }
+
+    .nav-right{
+      display: none;
+    }
+    .menuHamburguesa{
+      display: block;
+    }
+
+
+    .section.products {
+      padding: 5px;
+    }
+    .product-grid {
+      padding-left: 45px;
+      padding-right: 45px;
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .grid-container {
+     
+      grid-template-columns: repeat(1, 1fr);
+      
+    }
+
+  }
+    
+}
+
+
+
