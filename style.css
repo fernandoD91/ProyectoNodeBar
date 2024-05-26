@@ -601,7 +601,7 @@ input[type="submit"]:hover {
     }
     .container-central{
       
-      height: 42vh;
+      height: 50vh;
       
       padding: 0.5rem;
       
@@ -626,7 +626,7 @@ input[type="submit"]:hover {
     }
     .container-central{
       flex-direction: column;
-      height: 42vh;
+      height: 65vh;
       
       padding: 0.5rem;
       align-items:center;
