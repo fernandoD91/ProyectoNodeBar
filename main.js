@@ -25,6 +25,7 @@ function validarFormulario() {
       return false;
     }
   
+    
     if (!checkbox) {
       alert("Debe aceptar términos y condiciones para continuar.");
       return false;

@@ -51,6 +51,13 @@ p {
   color: #F2994A;
 }
 
+.menuHamburguesa{
+  color: white;
+  font-size: 2.5rem;
+  display: none;
+}
+
+
 .reserva-form input {
   margin-bottom: 10px;
 }
@@ -75,23 +82,13 @@ p {
   background-size: cover;
 }
 
-.container-central-reservation {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  height: 150vh;
-  padding: 0 20px;
-  background-image: url('/img/fondo_home.png');
-  background-size: cover;
-}
 
 .container-central-reservation {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  height: 150vh;
+  height: auto;
   padding: 0 20px;
   background-image: url('/img/fondo_home.png');
   background-size: cover;
@@ -140,13 +137,6 @@ p {
     display: block;
     box-sizing: border-box;
 }
-/* .reservation-form input[type="file"]{
-  width: 100%;
-    padding: 10px;
-    margin-bottom: 25px;
-    display: block;
-} */
-
 .reservation-form textarea[id="comentarios"]{
   height: 50px;
 }
@@ -408,7 +398,7 @@ p {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-  @media (min-width: 768px) {
+  /* @media (min-width: 768px) {
     .grid-container {
       grid-template-columns: repeat(4, 1fr);
     }
@@ -418,7 +408,7 @@ p {
     .product-grid {
       grid-template-columns: repeat(4, 1fr);
     }
-  }
+  } */
 
 /* formulario y mapa de contacto*/
 
@@ -474,4 +464,111 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background-color: #45a049;
+}
+
+@media screen {
+  /* ******************* Media Query para Tablets ********************** */
+
+ @media (600px < width < 960px){
+
+   .carrusel{
+     display: none;
+   }
+   .puntos{
+     display: none;
+   }
+   .container-central{
+     
+     height: 50vh;
+     
+     padding: 0.5rem;
+     
+   }
+
+   .product-grid {
+     grid-template-columns: repeat(2, 1fr);
+    }
+
+   .grid-container {
+     grid-template-columns: repeat(2, 1fr);
+   } 
+
+ }
+   /* ******************* Media Query para Celulares *********************** */
+ @media (0px < width < 600px){
+   .carrusel{
+     display: none;
+   }
+   .puntos{
+     display: none;
+   }
+   .container-central{
+     flex-direction: column;
+     height: 65vh;
+     
+     padding: 0.5rem;
+     align-items:center;
+   }
+   .container-central-reservation{
+    flex-direction: column;
+    padding: 0.5rem;
+    align-items:center;
+  }
+   .value-prop{
+     width: 90vw;
+     margin: 0;
+     padding: 0;
+   
+   }
+   .reservation-form{
+     width: 90vw;
+   }
+
+   .nav-right{
+     display: none;
+   }
+   .nav-right.show {   /*********** la clase show se agrega o se quita al hacer click en el menu hamburguesa */
+     display: flex;
+     font-weight: bolder;
+     font-size: larger;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     position: absolute;
+     top: 75px;
+     left: 0;
+     width: 100%;
+     background-color: rgb(5, 5, 5);
+     padding: 10px 0;
+     z-index: 999;
+ }
+ 
+ .nav-right.show a {
+     margin: 10px 0;
+ }
+
+
+
+   .menuHamburguesa{
+     display: block;
+   }
+
+
+   .section.products {
+     padding: 5px;
+   }
+   .product-grid {
+     padding-left: 45px;
+     padding-right: 45px;
+     grid-template-columns: repeat(1, 1fr);
+   }
+
+   .grid-container {
+    
+     grid-template-columns: repeat(1, 1fr);
+     
+   }
+
+ }
+   
 }

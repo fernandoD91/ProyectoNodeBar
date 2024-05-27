@@ -3,6 +3,7 @@
 <html lang="es">
 <head>
     <title>Mustoso</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="/css/all.min.css">
     <link rel="stylesheet" href="/css/brands.min.css">
@@ -18,6 +19,9 @@
             <a href="menu.html">Menú</a>
             <a href="contacto.html">Contacto</a>
             <a href="reserva.html">Reserva</a>
+        </div>
+        <div class="menuHamburguesa">
+          <i class="fa-solid fa-burger"></i>
         </div>
     </div>
 
@@ -35,13 +39,13 @@
         <h2>Completá el formulario</h2>
         <form action="/submit_reservation" method="post" onsubmit="return validarFormulario()">
             <label for="name">Nombre y apellido:</label>
-            <input type="text" id="name" name="name" placeholder="Ej. Juan Sanchez" required>
+            <input type="text" id="name" name="name" placeholder="Ej. Juan Sanchez">
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="micorreo@email.com" required>
+            <input type="email" id="email" name="email" placeholder="micorreo@email.com">
             <label for="telefono">Teléfono:</label>
-            <input type="phone" id="telefono" name="telefono" size="25" maxlength="35" placeholder="teléfono" required>
+            <input type="phone" id="telefono" name="telefono" size="25" maxlength="35" placeholder="teléfono">
             <label for="people">Cantidad de personas:</label>
-            <input type="number" id="people" name="people"min="1" placeholder="Ingresar cantidad" required>
+            <input type="number" id="people" name="people"min="1" placeholder="Ingresar cantidad">
             <label for="date">Seleccione una fecha</label>
             <input name="date" id="date" type="date" required>
             <label for="horario">Seleccione un horario</label>
@@ -54,8 +58,7 @@
               <option value="21">21 hs.</option>
               <option value="23">23 hs</option>
             </select>
-            <!-- <label for="archivo">Subir imagen de su documento</label>
-            <input type="file" id="archivor" name="archivo" required> -->
+           
            <label for="imagen">Imagen:</label>
             <input type="image" id="imagen" name="imagen" src="./img/NodeBar.ico" alt="Imagen" width="50" height="50">
             <label for="comentarios">Dejanos tus comentarios o peticiones</label>
