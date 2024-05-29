@@ -1,14 +1,3 @@
-// console.log("Nuestra api")
-
-// const URL="https://foodish-api.com/images/pizza";
-
-// fetch(URL)
-// .then(response => response.json())
-// .then(data => {
-//     const img = document.querySelector(`img`);
-//     img.src = data[0].url;
-// });
-
 
 
 function validarFormulario() {
